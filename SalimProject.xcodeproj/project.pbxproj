@@ -14,6 +14,8 @@
 		B95342AE27DB879D0091DD16 /* SalimProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B95342AC27DB879D0091DD16 /* SalimProject.xcdatamodeld */; };
 		B95342B027DB879E0091DD16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95342AF27DB879E0091DD16 /* Assets.xcassets */; };
 		B95342B327DB879E0091DD16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B95342B127DB879E0091DD16 /* LaunchScreen.storyboard */; };
+		B95342BB27DB90C20091DD16 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95342BA27DB90C20091DD16 /* Quote.swift */; };
+		B95342BD27DB96040091DD16 /* Quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = B95342BC27DB96040091DD16 /* Quotes.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B95342AF27DB879E0091DD16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B95342B227DB879E0091DD16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B95342B427DB879E0091DD16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B95342BA27DB90C20091DD16 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		B95342BC27DB96040091DD16 /* Quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Quotes.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +65,10 @@
 				B95342A327DB879D0091DD16 /* AppDelegate.swift */,
 				B95342A527DB879D0091DD16 /* SceneDelegate.swift */,
 				B95342A727DB879D0091DD16 /* ViewController.swift */,
+				B95342BA27DB90C20091DD16 /* Quote.swift */,
 				B95342A927DB879D0091DD16 /* Main.storyboard */,
 				B95342AF27DB879E0091DD16 /* Assets.xcassets */,
+				B95342BC27DB96040091DD16 /* Quotes.json */,
 				B95342B127DB879E0091DD16 /* LaunchScreen.storyboard */,
 				B95342B427DB879E0091DD16 /* Info.plist */,
 				B95342AC27DB879D0091DD16 /* SalimProject.xcdatamodeld */,
@@ -131,6 +137,7 @@
 				B95342B327DB879E0091DD16 /* LaunchScreen.storyboard in Resources */,
 				B95342B027DB879E0091DD16 /* Assets.xcassets in Resources */,
 				B95342AB27DB879D0091DD16 /* Main.storyboard in Resources */,
+				B95342BD27DB96040091DD16 /* Quotes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +151,7 @@
 				B95342A827DB879D0091DD16 /* ViewController.swift in Sources */,
 				B95342A427DB879D0091DD16 /* AppDelegate.swift in Sources */,
 				B95342AE27DB879D0091DD16 /* SalimProject.xcdatamodeld in Sources */,
+				B95342BB27DB90C20091DD16 /* Quote.swift in Sources */,
 				B95342A627DB879D0091DD16 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

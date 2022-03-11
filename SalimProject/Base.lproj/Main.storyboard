@@ -1,24 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SalimProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="haY-Lg-HUy">
+                                <rect key="frame" x="25" y="79" width="364" height="32"/>
+                                <segments>
+                                    <segment title="ALL"/>
+                                    <segment title="Love"/>
+                                    <segment title="Problem"/>
+                                    <segment title="Work"/>
+                                </segments>
+                                <connections>
+                                    <action selector="topicSegmentedControlChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Zy6-4o-okG"/>
+                                </connections>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1hO-GQ-BJA">
+                                <rect key="frame" x="25" y="135" width="364" height="631"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="160" translatesAutoresizingMaskIntoConstraints="NO" id="jNi-Em-Bk1">
+                                <rect key="frame" x="47" y="791" width="320" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIW-Hr-XcV">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="Z1Q-3p-yzP"/>
+                                            <constraint firstAttribute="height" constant="80" id="fs2-Ch-wnh"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="-13" minY="-12" maxX="0.0" maxY="-12"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system" buttonSize="small"/>
+                                        <connections>
+                                            <action selector="previousButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XI3-Fo-jVd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cdt-tx-NqE">
+                                        <rect key="frame" x="240" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="F9Q-Vd-uGy"/>
+                                            <constraint firstAttribute="width" constant="80" id="Lsv-Ja-7P6"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
+                                        <connections>
+                                            <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Imm-BW-9cc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1hO-GQ-BJA" firstAttribute="top" secondItem="haY-Lg-HUy" secondAttribute="bottom" constant="25" id="DwI-YZ-NvT"/>
+                            <constraint firstItem="jNi-Em-Bk1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FVI-jt-u5G"/>
+                            <constraint firstItem="1hO-GQ-BJA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FdK-zn-Zwo"/>
+                            <constraint firstItem="haY-Lg-HUy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="P83-Vl-I2b"/>
+                            <constraint firstItem="haY-Lg-HUy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="S4N-7M-Veo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1hO-GQ-BJA" secondAttribute="trailing" constant="25" id="Sgy-vm-eU6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="haY-Lg-HUy" secondAttribute="trailing" constant="25" id="Z5p-kU-22L"/>
+                            <constraint firstAttribute="bottom" secondItem="jNi-Em-Bk1" secondAttribute="bottom" constant="25" id="ghv-Cs-wyB"/>
+                            <constraint firstItem="jNi-Em-Bk1" firstAttribute="top" secondItem="1hO-GQ-BJA" secondAttribute="bottom" constant="25" id="pkA-cV-cP1"/>
+                            <constraint firstItem="1hO-GQ-BJA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="sNm-Dh-CHG"/>
+                            <constraint firstItem="haY-Lg-HUy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u3Q-qw-ol9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextButton" destination="Cdt-tx-NqE" id="KOA-eL-7pK"/>
+                        <outlet property="previousButton" destination="bIW-Hr-XcV" id="fyg-Li-gQT"/>
+                        <outlet property="quotesTextView" destination="1hO-GQ-BJA" id="pwo-yJ-5Oo"/>
+                        <outlet property="topicSegmentedControl" destination="haY-Lg-HUy" id="R3K-JH-wIa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20" y="84"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
